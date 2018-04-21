@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+	<html lang="en" class="animated fadeInDown">
+	<head>
+		<title>Backbone.js Group Project</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="bbjs.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+		<link rel="shortcut icon" type="image/png" href="http://javascript-html5-tutorial.com/wp-content/uploads/2014/11/backbone.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+	    <script src='https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js'></script>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">		
+		<style>		
+		.fadeInDown{		
+				-webkit-animation-duration: 2s;		
+			}
+		</style>
+	</head>
+
+<body class="page1">
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+	      	<a class="navbar-brand" href="#">Backbone.js</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="bbjs_page1.html">Page1</a></li>
+	      <li><a href="bbjs_page2.html">Page 2</a></li>
+	      <li><a href="bbjs_page3.html">Page 3</a></li>
+	      <li><a href="bbjs_page4.html">Page 4</a></li>
+	      <li><a href="bbjs_page5.html">Page 5</a></li>
+	      <li><a href="bbjs_page6.html">Page 6</a></li>
+	    </ul>
+
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="bbjs_page6.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+	      <li><a href="https://translate.google.com/translate?hl=en&sl=auto&tl=fr&u=http%3A%2F%2Fscs.ryerson.ca%2F~jmakary%2FCPS530Project%2Fbbjs_page1.html"><span class="glyphicon glyphicon-globe"></span> Translate</a></li>
+	    </ul>
+
+	  </div>
+	</div>
+	</nav>
+
+	<div class="container">
+		<img class="img-responsive center-block" src="http://backbonejs.org/docs/images/backbone.png"/>
+		<img class="divider img-responsive center-block" src="https://i.imgur.com/SIqplqK.png"/>
+
+		<div class="mycont">
+			<button id="hides" onclick="hideShow()">About Backbone.js</button>
+
+			<div id="hideshow" style="display:none;">
+				<br><p>
+				⭒ Released in 2010.<p>
+				⭒ JavaScript library that includes classes and functions.<p>
+				⭒ <b>MVC Type = Model + View + Controller</b><p>
+				⭒ The user interacts with the system through the controllers<p>
+				⭒ The controller perceives the user’s actions, interprets them, and informs the model of changes required in accordance with the actions<p>
+				⭒ The model is in charge of providing access to the data available in the system. Receives a change request from the controller, executes it.<p>
+				⭒ The processes are invisible to the user – their task is to press a button and get the result (blackbox).<p>
+				⭒ <b>Main task:</b> organize the client part of the application in a logical way and to synchronize changes with the server part.<p>
+
+				<br>
+				⭒ <b>Backbone.js uses:</b><p>
+				- Models<p>
+				- Views<p>
+				- Collections<p>
+				- Events<p>
+				- Routers<br><br>
+
+				<img class="img-responsive center-block" src="https://i.imgur.com/ZMwimdE.jpg"/><br><br>
+
+				❅ <b><u>Models</u></b>: all data are presented on the client side in this form. Can be created, deleted, validated, and stored on the server. These are triggered through changing the model attribute in the interface.<p>
+				❅ <b><u>Views</u></b>: receives information about the model (data) change, and changes accordingly. Each view can be updated independently of each other since it is based on a specific model. These views collectively form the interface of the application.<p>
+				❅ <b><u>Collections:</u></b> group Models together (like a JavaScript array)<p>
+				❅ <b><u>Events:</u></b> bind events like user clicks or mouse-overs to the code<p>
+				❅ <b><u>Routers:</u></b> provides routing methods on the client side – in charge for the way the application will change with altering URL in the browser.<p>
+
+			</div>
+
+			<div id="page1">
+				<br>
+				<div id="marg"><b id="title">❅ Popularity: </b><br>
+				Backbone has started to decline in popularity as ReactJS and AngularJS is preferred by developers. It is considered to be useful for only "legacy" code.<br><br></div>
+				<img class="img-responsive center-block" src="https://i.imgur.com/qnvaSIN.png" width="45%"/><br>
+				<img class="img-responsive center-block" src="https://i.imgur.com/Q5UwPvu.png" width="55%"/><br>
+				<img class="img-responsive center-block" src="https://i.imgur.com/rCSHW31.png" width="45%"/><br>
+
+				<b id="title">❅ Strengths: </b><div id="marg"><p>
+					⭒ Easy to understand usability modules, straightforward learning curve<p>
+					⭒ Frameworks and libraries are designed to accelerate the development process through ready-made templates and solutions and elaborated structure<p>
+					⭒ Mostly open source code that can be used for free – total cost of developing applications decreases<p>
+					⭒ Well documented<p>
+					⭒ Lightweight set of tools – alone it is 7.6KB gzipped, with Jquery and Underscore a total of 41.6KB.<p>
+					⭒ Very compact library – simplest minimalist set of classes and functions<p>
+					⭒ Store data in models instead of in DOM<p>
+					⭒ Aims to serve as foundation for the application, provides options for extending usage of other libraries and tools (hence the name Backbone)<p>
+					⭒ Flexible and combines well with other tools – only fixed dependency is Underscore.js library as it does not work without it<p>
+					⭒ Event-driven communication between views and models<p>
+					⭒ Syncing with a back-end<p>
+					⭒ Maintainable by following conventions<p>
+					⭒ Simplifies complex UI design – saves time, increases code readability, simplifies future recoding<p><br>
+				</div>
+
+				<b id="title">❅ Weaknesses: </b><div id="marg"><p>
+					⭒ May be challenging for beginners<p>
+					⭒ Views become heavy as the application extends<p>
+					⭒ No built-in support for data bindings, must rely on add-ons<p>
+					⭒ The more complex the app, the more third-party plugins and custom coded script is needed to make the app work<p>
+					⭒ Difficulties with testing code<p>
+					⭒ Slow release of updates<p>
+					⭒ Lack of features<p><br>
+				</div>
+
+				<b id="title">❅ Who is it used by? </b><div id="marg"><p>
+					⭒ Most popularly used for eCommerce websites because it is light and helps prevent unnecessary requests to the server. Following are Business, News, and Sports websites.<br><br>
+					⭒ Full list of Projects and Companies using Backbone: <br>
+					<a href="https://github.com/jashkenas/backbone/wiki/Projects-and-Companies-using-Backbone">https://github.com/jashkenas/backbone/wiki/Projects-and-Companies-using-Backbone</a><br><br>
+					⭒ <b><u>Honorable mentions:</u></b> Foursquare, Sony Entertainment Network, Groupon, Wordpress, USA Today, Pandora, Hulu, Live Wallpaper for Android, SoundCloud Mobile, Khan Academy, Walmart Mobile<br><br>
+
+					<img class="img-responsive center-block" src="https://i.imgur.com/p8IHbSj.jpg" width="60%"/><br>
+				</div>
+
+				<b id="title">❅ Backend, frontend, or both? </b><div id="marg">
+					Frontend.
+				</div>
+			</div>
+		</div>
+	
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/underscore/underscore.js"></script>
+	<script src="bower_components/backbone/backbone.js"></script>
+	<script src="bbjs.js"></script>
+</body>
+</html>

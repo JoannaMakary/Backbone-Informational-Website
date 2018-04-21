@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="animated fadeInDown">
+	<head>
+		<title>Backbone.js Group Project</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="bbjs.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+		<link rel="shortcut icon" type="image/png" href="http://javascript-html5-tutorial.com/wp-content/uploads/2014/11/backbone.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+	    <script src='https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js'></script>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">		
+		<style>		
+		.fadeInDown{		
+				-webkit-animation-duration: 2s;		
+			}
+		</style>
+	</head>
+
+<body class="page3">
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>                        
+			      </button>
+	      	<a class="navbar-brand" href="#">Backbone.js</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	    <ul class="nav navbar-nav">
+	      <li><a href="bbjs_page1.html">Page1</a></li>
+	      <li><a href="bbjs_page2.html">Page 2</a></li>
+	      <li class="active"><a href="bbjs_page3.html">Page 3</a></li>
+	      <li><a href="bbjs_page4.html">Page 4</a></li>
+	      <li><a href="bbjs_page5.html">Page 5</a></li>
+	      <li><a href="bbjs_page6.html">Page 6</a></li>
+	    </ul>
+
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="bbjs_page6.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+	      <li><a href="https://translate.google.com/translate?hl=en&sl=auto&tl=fr&u=http%3A%2F%2Fscs.ryerson.ca%2F~jmakary%2FCPS530Project%2Fbbjs_page1.html"><span class="glyphicon glyphicon-globe"></span> Translate</a></li>
+	    </ul>
+
+	  </div>
+	</div>
+	</nav>
+
+	<div class="container">
+		<img class="img-responsive center-block" src="http://backbonejs.org/docs/images/backbone.png" width="50%"/>
+		<img class="tutorial img-responsive center-block" src="https://i.imgur.com/qFBV3D1.png" width="30%"/>
+
+		<div class="mycont3">
+				<div id="marg"><br><br>
+					<img class="img-responsive center-block" src="https://cdn2.iconfinder.com/data/icons/university-set-5/512/15-512.png" width="10%"/>
+					<br>
+					<b>Welcome to our short Backbone.js Tutorial!</b><br><br>
+					Today, our goal is to teach you to use Backbone for your simple app in order to create a contact list.<br><br>
+
+					<b id="title">Procedure</b><br>
+					❅ Follow Page 2 to download or configure Backbone into your code. For our demonstration purposes, we used Method 2 where we added the code into our HTML file. <br><br>
+
+					❅ Create your standard HTML template and load in the CDNs. <br>
+					❅ We included Bootstrap for our app in order to have a standard template and to be able to use certain functions. <br><br>
+					<img class="img-responsive center-block" src="https://i.imgur.com/EeUrPjV.png"/><br><br>
+
+					❅ Create a div with class container for the app<br>
+					❅ Create your desired columns by defining a table (we used Name, Phone#, E-mail and Action)<br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/7VwoVgh.png" width="50%"/><br><br>
+					  
+
+					❅ Open a new .js file – we will begin to create our Backbone scripts.<br>
+					❅ Start by creating a <u>Model</u> – a model is where data is presented on the client side.<br>
+					❅ ContactList is one of our classes that extends Backbone.Model – can provide default values (we did not).<br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/RTahz3B.png"  width="50%"//><br><br>
+					  
+
+					❅ Now we create a Collection – a Collection groups Models together (like a JavaScript array)<br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/xzArUYK.png"  width="50%"//><br>
+					 
+					❅ The url would be used if we have a database to connect to for storing all of our data, which would require more knowledge outside the scope of our project (such as MongoDB, Mongoose, etc.)<br><br>
+
+					❅ Can instantiate contacts as follows (commented out as we did not use it in our example)<br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/O3jPNne.png"  width="50%"//><br><br>
+					  
+					❅ We now instantiate a <u>Collection</u> that will be like an array that contains the contacts that we instantiated the step before.<br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/3syKi9G.png"  width="50%"//><br><br>
+					 
+
+					❅ The next thing we will create are <u>Views</u> – views receive information about the data change and changes accordingly.<br>
+					❅ We will create two views – one will be for each individual contact that we create and the other will be for all of the contacts collectively. <br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/e6JSPOA.png"  width="50%"//><br><br>
+
+					❅ We will want to put the ContactView and ContactsView in a tbody in the HTML. Return to your HTML file and create a &lt;tbody&gt; in your table, with a  class of contacts-list, and add &lt;tr&gt;s<br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/FqLMPpm.png"  width="50%"//><br><br>
+					 
+					❅ Want to now create the views<br>
+					❅ For the individual view, model is a new Contact so that when we create a new Contact, the View will use that.<br>
+					❅ The tagName is ‘tr’ so that each new contact will have an individual table row.<br>
+					❅ Initialize function uses an underscore template<br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/tPBGss5.png"  width="50%"//><br>
+					❅ Need to create the template in the HTML file<br>
+					❅ Under the container div we add a template<br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/em4rdmw.png"  width="50%"//><br><br>
+
+					❅ Back to the scripts file, we put the template that we created<br>
+					❅ We want to access the HTML of this template <br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/aUOadhS.png"  width="50%"//><br><br>
+
+					❅ For the template in the HTML, we inject the data within td spans using &lt;%= id =&gt; <br>
+					❅ Added a warning, edit, cancel, and delete button <br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/bVPYWZx.png" /><br>
+					❅ Now we add a render function in the scripts file, so we can render the contacts <br>
+					❅ We use this.$el.html of this.template that will be inserted from the model to JSON. <br><br>
+
+					❅ For the ContactsView, the model is contacts, el is contacts-list<br>
+					❅ Initialize will make it so that every time a contact is added we will render the View and give it context<br>
+					❅ Render function will first clear the this.$el<br>
+					❅ ._each goes through each of the contacts so we pass in the array<br>
+					❅ We will append a new table row that is a BlogView that is a blog Model for that element<br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/1V9epOG.png"  width="50%"//><br><br>
+					 
+					❅ Since we are listening for a new contact to be added, we will create an input box to do that under thead in the HTML file.<br>
+					❅ The input classes will be form-control with input for each column<br>
+					❅ We then add a button for adding the contacts <br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/edSFNdG.png"  width="50%"//><br><br>
+
+					❅ Now we can create document ready code at the bottom of our scripts file so that when the document is finished loading it will go to run the code here<br>
+					❅ For the element add-contact, when it is clicked it will run the function<br>
+					❅ Passes the value of the inputs<br>
+					❅ Now every time we create a contact, we take the Contacts collection and add contact which should trigger the ContactsView initialize function from before and render the page.<br>
+					❅ Also need to clear the forms when finished with .val(‘’) to each input<br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/cJ8TmAu.png"  width="50%"//><br><br>
+					  
+
+					❅ Need to add return this for the scripts to work <br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/7xeaYbv.png"  width="50%"//><br><br>
+
+					❅ The add functionality is now working for the app.<br><br>
+
+					❅ The following steps will achieve the Update and Delete functionalities.<br>
+					❅ For the edit button – going back to the single View after initialize we add a list of <u>Events</u> – Events bind things like user clicks or mouse-overs to the code<br>
+					❅ The first event to listen for is when the edit button is clicked which we already created a class for in the HTML file<br>
+					❅ To create the edit function, need to add display:none at first because we are not using it until after it is clicked<br>
+					❅ Hide the Edit and Delete buttons and show the Update and Cancel<br>
+					❅ To make them editable we store the values of the data’s HTML first<br>
+					❅ Then we change the elements to the input form elements that we edit<br> 
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/undefined.png" /><br>
+					❅ It is now editable<br>
+
+
+					❅ Now we will create the Update functionality by creating a new event and function<br>
+					❅ We set the attributes to the value of the input box for each<br>
+					❅ And we want to listen to changes for our Model<br>
+					❅ In the all Contacts view, we add this.model.on for change we render it<br>
+					❅ Timeout function because it only registers the first form input when it renders – so we use self.render for 30 seconds to register the values.<br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/cRbQfvi.png"  width="40%"//><br><br>
+					 
+
+					❅ Now we will add the Cancel event and function<br>
+					❅ Only need to refresh the page so it goes back to default<br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/wVtoT8a.png" width="30%"//><br><br>
+					 
+
+					❅ Now for the delete functionality<br>
+					❅ Delete function will destroy the model it is referring to<br>
+					❅ Need the ContactsView to listen to the change (deletion)<br>
+					❅ For the model if it is removed it will re-render itself<br>
+					❅ We can add success and error responses for testing purposes into the console<br>
+					❅ Our new functions will look like so<br>
+					<br><img class="img-responsive center-block" src="https://i.imgur.com/7ocnDVj.png"  /><br>
+
+				</div>
+		</div>
+	
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/underscore/underscore.js"></script>
+	<script src="bower_components/backbone/backbone.js"></script>
+	<script src="bbjs.js"></script>
+</body>
+</html>
